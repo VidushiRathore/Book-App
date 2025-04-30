@@ -7,7 +7,7 @@ const ViewBook = () => {
   },[])
   const handleview = async () => {
     try {
-      const res = await axios.get('http://localhost:9000/books');
+      const res = await axios.get('https://book-app-0f3t.onrender.com');
       setBooks(res.data);
     }
     catch (err) {
